@@ -2,10 +2,10 @@ package be.renaudraas.kotlinplayground.business.network.response
 
 import be.renaudraas.kotlinplayground.business.model.Repository
 
-data class RepositoryResponse(
+class RepositoryResponse(
         val id: Long,
         val name: String,
-        val description: String,
+        val description: String?,
         val isPrivate: Boolean,
         val user: UserResponse?
 )
